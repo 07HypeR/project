@@ -3,7 +3,13 @@ import { View, Image, StyleSheet } from 'react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
-import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold } from '@expo-google-fonts/poppins';
+import {
+  useFonts,
+  Poppins_400Regular,
+  Poppins_500Medium,
+  Poppins_600SemiBold,
+  Poppins_700Bold,
+} from '@expo-google-fonts/poppins';
 import { SplashScreen } from 'expo-router';
 import { AuthProvider } from '@/contexts/AuthContext';
 
@@ -33,7 +39,10 @@ export default function RootLayout() {
   if (showSplash) {
     return (
       <View style={styles.splashContainer}>
-        <Image source={require('../assets/images/icon.png')} style={styles.splashImage} />
+        <Image
+          source={require('../assets/images/icon.png')}
+          style={styles.splashImage}
+        />
       </View>
     );
   }

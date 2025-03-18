@@ -66,7 +66,7 @@ export default function AuthScreen() {
               ]}
             >
               <Text style={[styles.buttonText, styles.signUpText]}>
-                 Sign Up
+                Sign Up
               </Text>
             </Pressable>
           </Link>
